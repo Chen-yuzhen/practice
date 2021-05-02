@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript ES5</title>
+</head>
+
+<body>
+
+    <h1 id="title">這是標題567</h1>
+    <input type="text" id="text_input" value="JS">
+    <script>
+        var e_id = "title"
+        var input_id = "text_input"
+        var hElement1 = document.getElementById(e_id)
+        var inputElement = document.getElementById(input_id)
+
+        inputElement.addEventListener("input", function() {
+            var value = inputElement.value
+            hElement1.innerHTML = "你的名字是: " + value
+        })
+
+        var value = inputElement.value
+        hElement1.innerHTML = "你的名字是: " + value
+    </script>
+
+
+</body>
+
+</html>
